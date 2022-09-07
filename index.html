@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airbot</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home">airBot</a>
+    <a href="chatBot/index.php">chatBot</a>
+    <a href="mailBot/index.html">mailBot</a>
+  </div>
+
+  <div class="bodybody">
+    <div class="container">
+          <div class="card" onclick="chatBot()">
+            <div class="card-header">
+              <img src="email.png" class="image"/>
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">chatBot</span>
+              <h4>
+                Why use airBot->chatBot?
+              </h4>
+              <p>
+                Users palce their queries about airport related COVID guidelines from North-East India and the
+                chatBot tries to provide solution instantly.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" onclick="mailBot()">
+            <div class="card-header">
+              <img src="chat.png"  class="image"/>
+            </div>
+            <div class="card-body">
+              <span class="tag tag-purple">mailBot</span>
+              <h4>
+                Why use airBot-> mailBot?
+              </h4>
+              <p>
+                Users need to provide email address and register their queries related to COVID guidelines 
+                from Airports at North-East Indian States.
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+    
+</body>
+
+<script>
+  function chatBot(){
+    window.location = 'chatBot/index.php';
+  }
+
+  function mailBot(){
+    window.location = 'mailBot/index.html';
+  }
+
+</script>
+</html>
